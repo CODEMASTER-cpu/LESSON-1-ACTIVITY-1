@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bouncing Ball Animation</title>
+
+    <style>
+        /* Container to center the ball */
+
+        .container {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+            background-color: #f0f0f0;
+
+            margin: 0;
+
+        }
+
+        /* Ball styling */
+
+        .ball {
+
+            width: 50px;
+
+            height: 50px;
+
+            border-radius: 50%;
+
+            background-color: #3498db;
+
+            animation: bounce 2s infinite ease-in-out;
+
+        }
+
+        /* Keyframes for bouncing effect */
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+
+                transform: translateY(0);
+
+            }
+
+            50% {
+
+                transform: translateY(-100px);
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="ball"></div>
+
+    </div>
+
+</body>
+
+</html>
